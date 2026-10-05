@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Presonal</title>
+    <link rel="stylesheet" href="./abdo.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<!---section header-->
+<div class="header">
+<!-- div container-->
+<div class="container">
+<!---navbar-->
+<nav>
+<img src="./images/logo.png" alt="" class="logo">
+<ul class="menu">
+<li><a href="#header-text">HOME</a></li>
+<li><a href="#About">ABOUT</a></li>
+<li><a href="#services">SERVICES</a></li>
+<li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+<li><a href="#contact">CONTACT</a></li>
+<i class="fa-solid fa-xmark" onclick="closeMenu()"></i><!---cross icon -->
+</ul>
+<i class="fa-solid fa-bars" onclick="showMenu()"></i><!---menu icon bar-->
+</nav>
+<!--- finished navigationbar-->
+<div class="header-text" id="header-text">
+<p>MERN STUCK DEVELOPER</p>
+<h1>Im,<span>abdelkhalek</span><br>from algeria</h1>
+</div>
+</div>
+</div>
+<!--section About -->
+<section class="About" id="About">
+<!--container-->
+<div class="container">
+<!--row ---->
+<div class="row">
+<!---about-col-1-->
+<div class="about-col-1">
+<img src="./images/user.png" alt="">
+</div>
+<!--- finished about-col-1-->
+<!---about-col-2-->
+<div class="about-col-2">
+<h1 class="sub-title">About Me</h1>
+<p>MERN Stack combines MongoDB, Express.js, React, and Node.js to build powerful, modern, scalable full-stack web applications.</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links"  onclick="opentab('Experience')" >Experience</p>
+<p class="tab-links"  onclick="opentab('eduction')">Eduction</p>
+</div>
+<!---tab-content-->
+<div class="tab-content active-tab" id="skills">
+<ul>
+<li><span>UI&UX</span><br> web/App interfaces</li>
+<li><span>web development</span><br>Development Web Application</li>
+<li><span>App development</span><br>building android /ios Apps</li>
+</ul>
+</div>
+<div class="tab-content" id="Experience">
+<ul>
+<li><span>2023-current</span><br> ui/ux design training at et intitute</li>
+<li><span>2019-2021</span><br>team lead at startapp llc</li>
+<li><span>2017-2019</span><br>ui/ux design executive at coin  digital ltd </li>
+</ul>
+</div>
+<div class="tab-content" id="eduction">
+<ul>
+<li><span>2023</span><br>ui/ux design training at et institute</li>
+<li><span>2023</span><br>mba from mit algeria</li>
+<li><span>2023</span><br>bba from ism algeria</li>
+</ul>
+</div>
+</div>
+<!--- finished about-col-2-->
+</div>
+</div>
+</section>
+<!---fished About section -->
+<!---section services -->
+<section class="services" id="services">
+<div class="container">
+<h1 class="sub-title">My services</h1>
+<div class="services-list">
+<div>
+<h2>web development</h2>
+<p>Web development combines HTML, CSS, JavaScript, and modern frameworks to create responsive, interactive, user-friendly websites and web applications.</p>
+<a href="#">learn More</a>
+</div>
+<div>
+<h2>back end</h2>
+<p>Backend development manages servers, databases, APIs, authentication, and application logic, ensuring websites work securely, efficiently, and reliably.</p>
+<a href="#">learn More</a>
+</div>
+<div>
+<h2>front end </h2>
+<p>Frontend development creates responsive, interactive interfaces using HTML, CSS, JavaScript, and modern frameworks to deliver engaging user experiences.</p>
+<a href="#">learn More</a>
+</div>
+</div>
+</div>
+</section>
+<!---finished  section services -->
+<!---section PORTFOLIO -->
+<section class="PORTFOLIO" id="PORTFOLIO">
+<div class="container">
+<h1 class="sub-title">My Portfolio</h1>
+<div class="work-list">
+<div class="work">
+<img src="./images/work-1.png">
+<div class="layer">
+  <h3>social Media App</h3>
+  <p>I develop social media applications with modern technologies, creating interactive features, secure authentication, real-time communication, and engaging user experiences.</p>
+ </div>
+</div>
+<div class="work">
+<img src="./images/work-2.png" >
+<div class="layer">
+<h3>Music App</h3>
+<p>I develop music applications with intuitive interfaces, playlist management, audio controls, search features, and smooth experiences for music lovers.</p>
+</div>
+</div>
+<div class="work">
+<img src="./images/work-3.png">
+<div class="layer">
+<h3>Online shopping App</h3>
+<p>I develop online shopping applications with product browsing, search, cart management, secure authentication, and seamless purchasing experiences for users.</p>
+</div>
+</div>
+</div>
+<a href="#" class="btn">See More</a>
+</div>
+</section>
+<!---finished  section   Portfilio -->
+<!---  section contact -->
+<section class="contact" id="contact">
+<!---container-->
+<div class="container">
+<!---row-->
+<div class="row">
+<!---contact-left-->
+<div class="contact-left">
+<h1 class="sub-title">Contact Me</h1>
+<p>abdelkhalekbelarbi@gmail.com</p>
+<p>+0123456789</p>
+<div class="icons-socials">
+<img src="./images/Facebook.png" alt="">
+<img src="./images/Instagram.jpg" alt="">
+<img src="./images/linked.png" alt="">
+<img src="./images/Twitter.png" alt="">
+</div>
+</div>
+<!--contact-right----->
+<div class="contact-right">
+<form>
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="Message" rows="6"  placeholder="Your Message"></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+</div>
+<!--copyright-->
+<div class="copyright">
+<p>Copyright by Abdelkhalek Belarbi <i class="fa-solid fa-heart"></i></p>
+</div>
+</section>
+<!---js-->
+<script src="./abdo.js"></script>
+</body>
+</html>
